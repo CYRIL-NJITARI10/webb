@@ -1,0 +1,62 @@
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Hide long text on mobile phones*/
+@media (max-width: 1000px) {
+  p.long-text {
+    display: none;
+  }
+}
+
+body {
+			margin: 0;
+			padding: 0;
+		}
+		
+header {
+			background-color: #4AB5B5;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px;
+		}
+		.logo {
+			width: 50px;
+			height: 50px;
+			margin-right: 10px;
+		}
+		.buttons {
+			display: flex;
+			align-items: center;
+		}
+button {
+			margin-left: 10px;
+			padding: 5px 10px;
+			border: none;
+			background-color: #fff;
+			color: #333;
+			cursor: pointer;
+			border-radius: 5px;
+			font-size: 16px;
+			font-weight: bold;
+}
+button:hover {
+			background-color: #333;
+			color: #fff;
+		}
+		.container {
+			display: flex;
+			align-items: flex-start;
+			margin: 20px;
+			border-left: 3px solid #EE2C12;
+			padding-left: 20px;
+		}
+		
+}	
+		
+		
+		

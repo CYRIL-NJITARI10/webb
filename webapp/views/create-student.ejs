@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/style.css"></link>
+	<title>create a student </title>
+</head>
+<body>
+	<header>
+		<img class="logo" src="/logo.png" alt="Logo">
+		<div class="buttons">
+			<button><a href="http://localhost:3000">Home</button>
+			<button><a href="http://localhost:3000/students">Students</button>
+			<button><a href="http://localhost:3000/students/create">Create</button>
+			<button><a href="http://localhost:3000/students/data">Data viz</a></button>
+		</div>
+	</header>
+	<div class="container">
+		<form method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" required/>
+            <label for="school">School</label>
+            <input type="text" name="school" required />
+            <button type="submit">Add new student</button>
+</form>
+	</div>
+</body>
+</html>

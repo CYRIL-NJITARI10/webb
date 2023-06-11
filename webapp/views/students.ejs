@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css"></link>
+    <script type="text/javascript" src="/students.js"></script>
+  </head>
+  <body>
+  	<header>
+		<img class="logo" src="/logo.png" alt="Logo">
+		<div class="buttons">
+			<button><a href="http://localhost:3000">Home</button>
+			<button><a href="http://localhost:3000/students">Students</button>
+			<button><a href="http://localhost:3000/students/create">Create</button>
+			<button><a href="http://localhost:3000/students/data">Data viz</a></button>
+		</div>
+	</header>
+    <main>
+    <h1>Students</h1>
+    <p class="long-text">
+      The most popular students of France 
+   </p>
+    <ul>
+    <% students.forEach(function(student, index) 
+    { %>
+    <li>
+      <%= student.name %> | <%= student.school %> | <a href="/students/<%= index %>">View details</a>
+    </li><% }) %>
+  </ul>
+
+   </main>
+  </body>
+</html>
